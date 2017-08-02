@@ -1,0 +1,92 @@
+<style>
+.footer {
+    position: fixed; 
+    top: 90%;
+    text-align:right; 
+    width:100%;
+}
+
+.banner {
+    position: fixed; 
+    top: 0%;
+    text-align:right; 
+    width:100%;
+}
+
+.reveal section img {
+  border: 0px;
+  box-shadow: 0 0 0 0;
+}
+.reveal table td {
+  border: 0px;
+}
+
+.reveal table {
+  border: 0px;
+}
+
+.reveal h1 {
+  font-size: 1.6em;
+}
+</style>
+
+
+Dive into Deep Learning
+========================================================
+author: Sigrid Keydana, Trivadis
+date: 2017/01/08
+autosize: true
+incremental:false
+
+
+Agenda
+========================================================
+
+&nbsp;
+
+### Part 1: Getting a feel for deep learning
+
+- Intro: What is Deep Learning and how does it work?
+- Implementing a neural network in NumPy
+- Linear regression using DL frameworks - meet Keras, TensorFlow, and PyTorch
+- Under the hood: Backpropagation in NumPy vs. TensorFlow vs. PyTorch
+
+&nbsp;
+
+### Part 2: Going deeper with CNNs, LSTMs and hyperparameter tuning
+
+- Convolutional Neural Networks (CNNs) for image classification
+- Long Short Term Memory (LSTM) for sequential data
+- Hyperparameter optimization with Keras and its scikit-learn API 
+
+
+<div class="banner">
+<img src='tri_logo_high.jpg' border=0 width='200px'>
+</div>
+
+<div class="footer">
+<img src='cube3.png' border=0 width='122px'>
+</div>
+
+
+About this course 
+========================================================
+
+
+&nbsp;
+
+- Focus is on code and examples (Python)
+- All code is made available as Jupyter notebooks
+- Main framework used is Keras
+- But part 1 also demonstrates examples in TensorFlow and PyTorch, for comparison
+
+
+<div class="banner">
+<img src='tri_logo_high.jpg' border=0 width='200px'>
+</div>
+
+<div class="footer">
+<img src='cube3.png' border=0 width='122px'>
+</div>
+
+

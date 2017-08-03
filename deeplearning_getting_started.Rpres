@@ -90,3 +90,55 @@ About this course
 </div>
 
 
+Notebooks
+========================================================
+
+
+&nbsp;
+
+### Part 1
+
+- Implementing a deep neural network with NumPy: dl_with_numpy.ipynb
+- Linear regression, the usual way (using scikit-learn): linear_regression_sklearn.ipynb
+- Keras basics: keras_basics.ipynb
+- Linear regression with Keras: linear_regression_keras.ipynb
+- TensorFlow basics: tensorflow_basics.ipynb
+- Linear regression with TensorFlow: linear_regression_tensorflow.ipynb
+- PyTorch basics: pytorch_basics.ipynb
+- Linear regression with PyTorch: linear_regression_pytorch.ipynb
+- Backpropagation in NumPy vs TensorFlow vs PyTorch: backprop_numpy_tf_pytorch.ipynb
+
+
+<div class="banner">
+<img src='tri_logo_high.jpg' border=0 width='200px'>
+</div>
+
+<div class="footer">
+<img src='cube3.png' border=0 width='122px'>
+</div>
+
+
+Notebooks
+========================================================
+
+
+&nbsp;
+
+### Part 2
+
+- Convolutional Neural Networks with Keras (1): cnn_keras.ipynb
+- Convolutional Neural Networks with Keras (2): cnn_keras_pretrained.ipynb
+- Convolutional Neural Networks with Keras (3): cnn_keras_pretrained_2.ipynb
+- Long Short Term Memory (LSTM) with Keras (1): lstm_keras_1.ipynb
+- Long Short Term Memory (LSTM) with Keras (2): lstm_keras_2.ipynb
+
+
+<div class="banner">
+<img src='tri_logo_high.jpg' border=0 width='200px'>
+</div>
+
+<div class="footer">
+<img src='cube3.png' border=0 width='122px'>
+</div>
+
+

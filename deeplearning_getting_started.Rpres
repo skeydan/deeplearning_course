@@ -34,11 +34,11 @@
 }
 
 .small-code pre code {
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .reveal .smalltext {
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
 </style>
@@ -50,6 +50,7 @@ author: Sigrid Keydana, Trivadis
 date: 2017/01/08
 autosize: true
 incremental:false
+width:1200
 
 
 Agenda
@@ -402,7 +403,7 @@ Several "origins" in different fields, see e.g.
 
 - Paul Werbos (1974). Beyond regression: New tools for prediction and analysis in the behavioral sciences. PhD thesis, Harvard University.
 
-- Rumelhart, David E.; Hinton, Geoffrey E.; Williams, Ronald J. (8 October 1986). "Learning representations by back-propagating errors". Nature. 323 (6088): 533–536.
+- Rumelhart, David E.; Hinton, Geoffrey E.; Williams, Ronald J. (8 October 1986). "Learning representations by back-propagating errors". Nature. 323 (6088): 533-536.
 
 <div class="footer">
 <img src='cube3.png' border=0 width='122px'>
@@ -447,7 +448,7 @@ The architectures en vogue now (CNN, LSTM...) have mostly been around since the 
 
 So why the hype, ehm, success now?
 
-- Big Data
+- big data
 - big models (due to better hardware, mostly)
 - big incentives (deep learning is profitable!)
 
@@ -546,8 +547,8 @@ class:small-code
 
 ```{r}
 (X <- matrix(c(0,0,0,1,1,0,1,1), nrow = 4, ncol = 2, byrow = TRUE))
-(W <- matrix(c(0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1), nrow = 4, ncol = 4, byrow = TRUE))
-(c <- matrix(rep(c(0,-1),4), nrow = 4, byrow = TRUE))
+(W <- matrix(c(1,1,1,1), nrow = 2, ncol = 2, byrow = TRUE))
+(c <- matrix(c(0,-1), nrow = 1, ncol = 2))
 ``` 
 
 
@@ -564,8 +565,8 @@ class:small-code
 
 
 ```{r}
-(matmul <- t(W) %*% X)
-(hidden <- matmul + c)
+(matmul <- X %*% W)
+(hidden <- matmul + rbind(c, c, c, c))
 ``` 
 
 
@@ -585,7 +586,7 @@ class:small-code
 library(ggplot2)
 library(dplyr)
 hidden <- data.frame(cbind(hidden,c(0,1,1,0))) %>% mutate(CLASS = factor(X3))
-ggplot(hidden, aes(X1,X2)) + geom_point(aes(color=CLASS))
+ggplot(hidden, aes(X1,X2)) + geom_point(aes(color=CLASS), size = 6)
 
 ``` 
 
@@ -826,8 +827,6 @@ class:smalltext
 
 The Convolution Operation
 ========================================================
-
-&nbsp;
 
 <figure>
     <img src='convolution_demo.png' width='60%'/>

@@ -2,4 +2,6 @@
 *.h5
 *.Rhistory
 *.tar.gz
+*.zip
+*npy
 
